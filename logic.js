@@ -1,7 +1,21 @@
-let cidade = ["Tijucas", "Iitapema", "Moscow",1,19,171293127830123102938149124-12412,"@","!!"]
+let array_cidade = []
 let res = document.getElementById("res")
 
+
 function inserir(){
-    console.log(cidade)
-    res.innerHTML = cidade
+
+    let cidade = document.getElementById("cidade").value
+
+    array_cidade.push(cidade)
+    res.innerHTML = array_cidade 
+
+    
 }
+
+function excluir(){
+    array_cidade.shift(cidade)
+    res.innerHTML = array_cidade
+}
+
+
+
